@@ -1,5 +1,10 @@
-﻿extends layout
+﻿doctype html
+html
+    head
+        title= title
 
-block content
-  h1= title
-  p Welcome to #{title}
+    body
+        h1 #{title}!
+        h2 Here to help you order your coffee!
+
+        iframe(height='600' width='800' src='https://webchat.botframework.com/embed/ordercoffeebot?s=7qHT9NV77hY.cwA.v0U.nOQ16pIGaM1u_Io1FeK5M0zjTnFy00kUTOQRhVC3D8Q')
