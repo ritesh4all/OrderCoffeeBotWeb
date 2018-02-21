@@ -1,6 +1,4 @@
-﻿// Steve web test
-
-'use strict';
+﻿'use strict';
 var debug = require('debug');
 var express = require('express');
 var path = require('path');
