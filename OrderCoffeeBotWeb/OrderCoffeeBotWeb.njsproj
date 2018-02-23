@@ -31,12 +31,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\javascripts\iframe.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <None Include="ordercoffeebot-app - Web Deploy.pubxml" />
     <None Include="ordercoffeebot - Web Deploy.pubxml" />
     <None Include="ordercoffeebot-app - Web Deploy %282%29.pubxml" />
     <Content Include="package.json" />
+    <Content Include="public\stylesheets\bot.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
     <Content Include="views\index.pug" />

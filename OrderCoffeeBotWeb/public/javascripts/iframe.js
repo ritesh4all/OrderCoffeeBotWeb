@@ -1,0 +1,1 @@
+﻿$("#bot-frame").contents().find(".wc-header").attr({ 'background-color': 'green'});
