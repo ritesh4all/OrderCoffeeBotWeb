@@ -3,16 +3,10 @@ html
     head
         title= title
         link(rel='stylesheet', href='/stylesheets/main.css')
-        //-
-            link(rel='stylesheet', href='/stylesheets/bot.css')
-            script(src='https://code.jquery.com/jquery-3.3.1.min.js'
-                integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
-                crossorigin='anonymous')
-            script(src='/javascripts/iframe.js')
-            <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+        <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
     body
         h1 #{title}!
         h2 Here to help you order your coffee!
 
         iframe(id='bot-frame' height='600' width='800' style="background-color: white" src='https://webchat.botframework.com/embed/ordercoffeebot?s=7qHT9NV77hY.cwA.v0U.nOQ16pIGaM1u_Io1FeK5M0zjTnFy00kUTOQRhVC3D8Q')
-        span(class="skype-button rounded" data-bot-id="b7b154b3-b4c4-4ae5-abf5-1cf161cf937f" data-text="Coffee Bot")
+        a(href='https://join.skype.com/bot/b7b154b3-b4c4-4ae5-abf5-1cf161cf937f' src='https://dev.botframework.com/Client/Images/Add-To-Skype-Buttons.png')
