@@ -5,7 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>OrderCoffeeBotWeb</Name>
     <RootNamespace>OrderCoffeeBotWeb</RootNamespace>
-    <NameOfLastUsedPublishProfile>ordercoffeebot-app - Web Deploy</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>OrderCoffeeBotWeb - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -36,9 +36,7 @@
     </Compile>
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
-    <None Include="ordercoffeebot-app - Web Deploy.pubxml" />
-    <None Include="ordercoffeebot - Web Deploy.pubxml" />
-    <None Include="ordercoffeebot-app - Web Deploy %282%29.pubxml" />
+    <None Include="OrderCoffeeBotWeb - Web Deploy.pubxml" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\bot.css">
       <SubType>Code</SubType>
@@ -57,6 +55,9 @@
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="views\terms.pug">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config" />
   </ItemGroup>
